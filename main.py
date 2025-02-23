@@ -1,42 +1,46 @@
 import asyncio
 import logging
-import os
+from pathlib import Path
+from aiogram import Bot, Dispatcher
+from aiogram.enums import ParseMode
+from aiogram.client.default import DefaultBotProperties
+from aiogram.fsm.storage.memory import MemoryStorage
 from dotenv import load_dotenv
+import os
 
-from aiogram import types, Dispatcher, Bot, filters, Router, F
-from aiogram.types import ContentType
+from bot.handlers.quiz_handlers import router as quiz_router
 
-cmd_router = Router()
-msg_router = Router()
-@cmd_router.message(filters.CommandStart())
-async def command_start_handler(message: types.Message) -> None:
-    await message.answer(f"Hello, ({message.from_user.full_name})!")
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-@cmd_router.message(filters.Command("help"))
-async def command_help_handler(message: types.Message) -> None:
-    await message.answer(f"This is zagzoga bot I can help you create PDF and telegram quizes.")
+# Load environment variables
+load_dotenv()
 
-@msg_router.message(F.document.mime_type == "text/comma-separated-values")
-async def csv_handler(message: types.Message) -> None:
-    await message.answer(f"This is a {message.document.file_name} with type {message.document.mime_type}")
+# Bot token from environment variable
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+if not TOKEN:
+    raise ValueError("TELEGRAM_BOT_TOKEN environment variable is not set!")
 
-@msg_router.message(F.document)
-async def document_handler(message: types.Message) -> None:
-    await message.answer(f"This is a {message.document.file_name} document with type {message.document.mime_type}")
+# Initialize bot and dispatcher with new DefaultBotProperties
+bot = Bot(
+    token=TOKEN,
+    default=DefaultBotProperties(parse_mode=ParseMode.HTML)
+)
+dp = Dispatcher(storage=MemoryStorage())
 
-async def main() -> None:
-    load_dotenv('.env')
-    TOKEN = os.getenv('API_TOKEN')
-    if TOKEN is None:
-        logging.error("API_TOKEN is missing in the .env file!")
-        exit(1)
+# Register routers
+dp.include_router(quiz_router)
+
+async def main():
+    logger.info("Starting bot...")
     
-    bot = Bot(TOKEN)
-    dp = Dispatcher()
-    dp.include_routers(cmd_router, msg_router)
-
+    # Ensure temporary directory exists
+    temp_dir = Path("temp")
+    temp_dir.mkdir(exist_ok=True)
+    
+    # Start polling
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
     asyncio.run(main())

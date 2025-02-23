@@ -1,2 +1,5 @@
-aiogram
-python-dotenv
+aiogram>=3.0.0
+python-dotenv>=1.0.0
+aiofiles>=23.0.0
+pydantic>=2.0.0
+python-json-logger>=2.0.0
