@@ -1,0 +1,158 @@
+{
+  "type": "lesson",
+  "module": "Medical Sciences",
+  "subject": "Cardiology",
+  "lesson": "Heart Anatomy",
+  "questions": [
+    {
+      "sn": "1",
+      "source": "Basic Anatomy",
+      "question": "Which chamber of the heart receives deoxygenated blood?",
+      "answer": "b",
+      "a": "Left Atrium",
+      "b": "Right Atrium",
+      "c": "Left Ventricle",
+      "d": "Right Ventricle"
+    },
+    {
+      "sn": "2",
+      "source": "Advanced Anatomy",
+      "question": "What is the function of the right ventricle?",
+      "answer": "a",
+      "a": "Pumps blood to the lungs",
+      "b": "Receives blood from the lungs",
+      "c": "Pumps blood to the body",
+      "d": "Receives blood from the body"
+    },
+    {
+      "sn": "3",
+      "source": "Cardiac Cycle",
+      "question": "During which phase does the heart muscle relax?",
+      "answer": "c",
+      "a": "Systole",
+      "b": "Contraction",
+      "c": "Diastole",
+      "d": "Ejection"
+    },
+    {
+      "sn": "4",
+      "source": "Heart Valves",
+      "question": "Which valve prevents backflow into the left atrium?",
+      "answer": "a",
+      "a": "Mitral Valve",
+      "b": "Tricuspid Valve",
+      "c": "Aortic Valve",
+      "d": "Pulmonary Valve"
+    },
+    {
+      "sn": "5",
+      "source": "Circulatory System",
+      "question": "Which blood vessels carry oxygenated blood away from the heart?",
+      "answer": "a",
+      "a": "Arteries",
+      "b": "Veins",
+      "c": "Capillaries",
+      "d": "Venules"
+    },
+    {
+      "sn": "6",
+      "source": "Cardiac Output",
+      "question": "What is the term for the volume of blood pumped by the heart per minute?",
+      "answer": "d",
+      "a": "Stroke Volume",
+      "b": "Heart Rate",
+      "c": "Blood Pressure",
+      "d": "Cardiac Output"
+    },
+    {
+      "sn": "7",
+      "source": "Electrophysiology",
+      "question": "Which node is known as the heart's natural pacemaker?",
+      "answer": "b",
+      "a": "AV Node",
+      "b": "SA Node",
+      "c": "Bundle of His",
+      "d": "Purkinje Fibers"
+    },
+    {
+      "sn": "8",
+      "source": "Coronary Circulation",
+      "question": "Which arteries supply blood to the heart muscle?",
+      "answer": "c",
+      "a": "Pulmonary Arteries",
+      "b": "Carotid Arteries",
+      "c": "Coronary Arteries",
+      "d": "Subclavian Arteries"
+    },
+    {
+      "sn": "9",
+      "source": "Heart Sounds",
+      "question": "What causes the first heart sound (S1)?",
+      "answer": "a",
+      "a": "Closure of the AV valves",
+      "b": "Closure of the semilunar valves",
+      "c": "Opening of the AV valves",
+      "d": "Opening of the semilunar valves"
+    },
+    {
+      "sn": "10",
+      "source": "Blood Flow",
+      "question": "In which direction does blood flow through the heart?",
+      "answer": "b",
+      "a": "Left to right",
+      "b": "Right to left",
+      "c": "Top to bottom",
+      "d": "Bottom to top"
+    },
+    {
+      "sn": "11",
+      "source": "Cardiovascular Physiology",
+      "question": "What is the primary function of the left ventricle?",
+      "answer": "d",
+      "a": "Receive oxygenated blood",
+      "b": "Pump blood to the lungs",
+      "c": "Receive deoxygenated blood",
+      "d": "Pump blood to the body"
+    },
+    {
+      "sn": "12",
+      "source": "Heart Anatomy",
+      "question": "Which layer of the heart wall is responsible for contraction?",
+      "answer": "c",
+      "a": "Endocardium",
+      "b": "Epicardium",
+      "c": "Myocardium",
+      "d": "Pericardium"
+    },
+    {
+      "sn": "13",
+      "source": "Cardiac Muscle",
+      "question": "What is the term for the specialized cell junctions in cardiac muscle?",
+      "answer": "a",
+      "a": "Intercalated Discs",
+      "b": "Gap Junctions",
+      "c": "Desmosomes",
+      "d": "Tight Junctions"
+    },
+    {
+      "sn": "14",
+      "source": "Cardiovascular System",
+      "question": "What is the role of the aorta?",
+      "answer": "b",
+      "a": "Carry blood to the lungs",
+      "b": "Distribute oxygenated blood to the body",
+      "c": "Return deoxygenated blood to the heart",
+      "d": "Regulate blood flow to the brain"
+    },
+    {
+      "sn": "15",
+      "source": "Cardiac Cycle",
+      "question": "What happens during ventricular systole?",
+      "answer": "d",
+      "a": "Atria contract",
+      "b": "Ventricles relax",
+      "c": "Blood fills the ventricles",
+      "d": "Ventricles contract"
+    }
+  ]
+}

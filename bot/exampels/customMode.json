@@ -1,0 +1,158 @@
+{
+  "type": "custom",
+  "title": "Programming Basics",
+  "module": "Computer Science",
+  "tags": ["programming", "beginners"],
+  "questions": [
+    {
+      "sn": "1",
+      "source": "Variables",
+      "question": "What is a variable?",
+      "answer": "b",
+      "a": "A fixed value",
+      "b": "A container for data",
+      "c": "A function",
+      "d": "A language"
+    },
+    {
+      "sn": "2",
+      "source": "Data Types",
+      "question": "Which of the following is a primitive data type in JavaScript?",
+      "answer": "c",
+      "a": "Array",
+      "b": "Object",
+      "c": "String",
+      "d": "Function"
+    },
+    {
+      "sn": "3",
+      "source": "Control Structures",
+      "question": "What is the purpose of an if statement?",
+      "answer": "a",
+      "a": "To execute code based on a condition",
+      "b": "To create a loop",
+      "c": "To define a function",
+      "d": "To declare a variable"
+    },
+    {
+      "sn": "4",
+      "source": "Loops",
+      "question": "Which loop is guaranteed to execute at least once?",
+      "answer": "d",
+      "a": "for loop",
+      "b": "while loop",
+      "c": "foreach loop",
+      "d": "do-while loop"
+    },
+    {
+      "sn": "5",
+      "source": "Functions",
+      "question": "What is a function in programming?",
+      "answer": "b",
+      "a": "A data type",
+      "b": "A block of code designed to perform a task",
+      "c": "A variable",
+      "d": "An operator"
+    },
+    {
+      "sn": "6",
+      "source": "Scope",
+      "question": "What is variable scope?",
+      "answer": "c",
+      "a": "The value of a variable",
+      "b": "The data type of a variable",
+      "c": "The accessibility of a variable",
+      "d": "The name of a variable"
+    },
+    {
+      "sn": "7",
+      "source": "Arrays",
+      "question": "How do you access the first element in an array in JavaScript?",
+      "answer": "a",
+      "a": "array[0]",
+      "b": "array[1]",
+      "c": "array.first()",
+      "d": "array[-1]"
+    },
+    {
+      "sn": "8",
+      "source": "Objects",
+      "question": "What is an object in programming?",
+      "answer": "b",
+      "a": "A function",
+      "b": "A collection of properties and methods",
+      "c": "A loop",
+      "d": "A variable"
+    },
+    {
+      "sn": "9",
+      "source": "Strings",
+      "question": "Which method is used to find the length of a string in JavaScript?",
+      "answer": "a",
+      "a": ".length",
+      "b": ".size()",
+      "c": ".count()",
+      "d": ".index()"
+    },
+    {
+      "sn": "10",
+      "source": "Events",
+      "question": "What is an event in JavaScript?",
+      "answer": "c",
+      "a": "A type of loop",
+      "b": "A variable",
+      "c": "An action or occurrence recognized by the software",
+      "d": "A function"
+    },
+    {
+      "sn": "11",
+      "source": "DOM",
+      "question": "What does DOM stand for?",
+      "answer": "d",
+      "a": "Document Object Model",
+      "b": "Data Object Model",
+      "c": "Document Observing Model",
+      "d": "Display Object Model"
+    },
+    {
+      "sn": "12",
+      "source": "CSS",
+      "question": "What is the purpose of CSS?",
+      "answer": "b",
+      "a": "To structure the content of a webpage",
+      "b": "To style the content of a webpage",
+      "c": "To add interactivity to a webpage",
+      "d": "To store data"
+    },
+    {
+      "sn": "13",
+      "source": "HTML",
+      "question": "What does HTML stand for?",
+      "answer": "a",
+      "a": "HyperText Markup Language",
+      "b": "Hyperlink Markup Language",
+      "c": "HyperText Making Language",
+      "d": "Hyperlink Text Markup Language"
+    },
+    {
+      "sn": "14",
+      "source": "Frameworks",
+      "question": "Which of the following is a JavaScript framework?",
+      "answer": "c",
+      "a": "Django",
+      "b": "Flask",
+      "c": "React",
+      "d": "Rails"
+    },
+    {
+      "sn": "15",
+      "source": "Best Practices",
+      "question": "What is the best practice for naming variables?",
+      "answer": "d",
+      "a": "Use single letters",
+      "b": "Use all uppercase letters",
+      "c": "Use numbers only",
+      "d": "Use descriptive names"
+    }
+  ]
+}
