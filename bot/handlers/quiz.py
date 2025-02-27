@@ -1,5 +1,6 @@
 from aiogram import Router
 from aiogram import F, types
+from bot.classes.quiz_poll import QuizPoll
 from bot.config.config import datafolder
 import json
 
@@ -15,6 +16,10 @@ async def json_handler(message: types.Message) -> None:
     await message.answer("json file downloaded successfully")
     
     json_data = load_quiz_data(filepath)
+    q_poll = QuizPoll(json_data)
+    poll_list = q_poll.get_poll_parameters()
+    for question in poll_list:
+        await bot.send_poll(message.chat.id, **question)
     await message.answer(f"json file processed successfully: {json_data}")
     
 
