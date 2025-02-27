@@ -14,15 +14,15 @@ async def json_handler(message: types.Message) -> None:
     bot = message.bot
     await bot.download(message.document, destination=filepath)
     await message.answer("json file downloaded successfully")
-    
+
     json_data = load_quiz_data(filepath)
     q_poll = QuizPoll(json_data)
     poll_list = q_poll.get_poll_parameters()
     for question in poll_list:
         await bot.send_poll(message.chat.id, **question)
     await message.answer(f"json file processed successfully: {json_data}")
-    
+
 
 def load_quiz_data(filepath: str) -> dict:
-    with open(filepath, 'r') as file:
+    with open(filepath, "r") as file:
         return json.load(file)
