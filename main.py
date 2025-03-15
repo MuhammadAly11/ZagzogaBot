@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 from aiogram import Dispatcher, Bot
-from bot.handlers import commands, quiz
+from bot.handlers import commands, other, quiz
 
 async def main() -> None:
     load_dotenv(".env")
@@ -18,6 +18,7 @@ async def main() -> None:
     dp.include_routers(
         commands.router,
         quiz.router,
+        other.router
     )
     await dp.start_polling(bot)
 
